@@ -8,7 +8,399 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
+            theme: {<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Naim | Unit Manager PruBSN & MDRT Qualifier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
             theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#ED1B2E',       // Prudential Red
+                        brandTurquoise: '#00A99D', // PruBSN Turquoise
+                        brandGold: '#D4AF37',      // MDRT Gold
+                        brandGrey: '#58595B',      // Corporate Grey
+                        brandDark: '#1A1A1A',      // Deep Grey
+                        brandLightGrey: '#F8F9FA', // Background Grey
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gold-gradient {
+            background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .image-glow {
+            box-shadow: 0 0 50px rgba(0, 169, 157, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-brandLightGrey font-sans text-brandDark antialiased">
+
+   <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brandGrey/10 py-2">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        
+        <div class="flex items-center gap-4">
+            <img src="prubsn.jpeg" alt="PruBSN Logo" class="h-10 md:h-16 w-auto object-contain">
+            <div class="w-[1px] h-6 bg-gray-300"></div>
+            <div class="text-brandDark font-extrabold text-sm md:text-xl tracking-tighter uppercase leading-none">
+                NAIM <span class="text-brandRed">FITAL</span>
+            </div>
+        </div>
+
+        <div class="hidden md:flex gap-8 text-brandGrey text-xs font-bold uppercase tracking-widest">
+            <a href="#kepakaran" class="hover:text-brandRed transition">Kepakaran</a>
+            <a href="#pelan" class="hover:text-brandRed transition">Pelan</a>
+            <a href="#profil" class="hover:text-brandRed transition">Profil</a>
+            <a href="#recruitment" class="hover:text-brandRed transition">Kerjaya</a>
+            <a href="#faq" class="hover:text-brandRed transition">FAQ</a>
+        </div>
+
+        <div class="md:hidden flex items-center">
+            <button id="mobile-menu-button" class="text-brandDark focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <a href="https://wa.me/60176335031" class="hidden md:block bg-brandTurquoise text-white px-6 py-2.5 rounded-full font-bold text-xs hover:bg-brandDark transition-all shadow-lg shadow-brandTurquoise/20">
+            HUBUNGI UM
+        </a>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 absolute w-full left-0 px-6 py-6 shadow-xl transition-all duration-300">
+        <div class="flex flex-col gap-5 text-brandGrey text-sm font-bold uppercase tracking-widest">
+            <a href="#kepakaran" class="mobile-link hover:text-brandRed">Kepakaran</a>
+            <a href="#pelan" class="mobile-link hover:text-brandRed">Pelan Takaful</a>
+            <a href="#profil" class="mobile-link hover:text-brandRed">Profil</a>
+            <a href="#recruitment" class="mobile-link hover:text-brandRed">Kerjaya</a>
+            <a href="#faq" class="mobile-link hover:text-brandRed">FAQ</a>
+            <hr class="border-gray-100">
+            <a href="https://wa.me/60176335031" class="bg-brandTurquoise text-white text-center py-4 rounded-xl shadow-lg">
+                HUBUNGI NAIM FITAL
+            </a>
+        </div>
+    </div>
+</nav>
+
+    <header class="relative pt-16 pb-24 overflow-hidden bg-whitmpe border-b border-gray-100">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-3/5 text-center md:text-left">
+                <span class="inline-block bg-brandGold/10 text-brandGold border border-brandGold/20 px-4 py-1 rounded-full text-xs font-black tracking-widest uppercase mb-6">
+                    MDRT AMBASSADOR 2025/2026
+                </span>
+                <h1 class="text-5xl md:text-7xl font-black text-brandDark leading-tight mb-6">
+                    PERLINDUNGAN <span class="text-brandRed italic">LEGAL</span> <br>
+                    & TAKAFUL <span class="text-brandTurquoise italic">ELITE.</span>
+                </h1>
+                <p class="text-brandGrey text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+                    Gabungan kepakaran Undang-undang (LLB UKM) dan pengalaman Takaful untuk memastikan tuntutan anda diproses dengan hujah yang tepat dan pantas.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-6 mb-8 items-center">
+                    <img src="muqmeen.jpeg" alt="Muqmeen Group" class="h-14">
+                    <img src="AB7.jpeg" alt="AB7" class="h-14">
+                </div>
+                <a href="#profil" class="inline-block bg-brandDark text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-brandRed transition-all shadow-2xl">
+                    KENALI UNIT MANAGER NAIM
+                </a>
+            </div>
+            <div class="md:w-2/5 relative">
+                <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-brandTurquoise/5 rounded-full blur-3xl shadow-inner"></div>
+                <img src="naim.jpeg" alt="Muhammad Naim bin Fital" class="relative z-10 w-full max-w-md mx-auto drop-shadow-2xl">
+            </div>
+        </div>
+    </header>
+
+    <section id="kepakaran" class="py-24 bg-brandLightGrey">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black mb-4 uppercase">Kepakaran Strategik</h2>
+                <p class="text-brandGrey italic">Mengapa 1,000+ Klien Memilih Muhammad Naim?</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:border-brandTurquoise transition-all group text-center">
+                    <h4 class="font-black text-brandTurquoise mb-4">LEGAL MINDSET</h4>
+                    <p class="text-sm text-brandGrey leading-relaxed">Menganalisa polisi dari sudut perundangan untuk kelulusan tuntutan yang lebih tinggi.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:border-brandRed transition-all group text-center">
+                    <h4 class="font-black text-brandRed mb-4">CLAIM SPECIALIST</h4>
+                    <p class="text-sm text-brandGrey leading-relaxed">Pakar dalam menguruskan kes tuntutan kritikal, kematian, dan kemalangan yang rumit.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:border-brandDark transition-all group text-center">
+                    <h4 class="font-black text-brandDark mb-4">HOSPITAL ADMISSION</h4>
+                    <p class="text-sm text-brandGrey leading-relaxed">Koordinasi kemasukan wad yang lancar dengan rangkaian panel hospital PruBSN.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:border-brandGold transition-all group text-center">
+                    <h4 class="font-black text-brandGold mb-4">ESTATE PLANNING</h4>
+                    <p class="text-sm text-brandGrey leading-relaxed">Pengurusan Hibah dan harta pusaka bagi memastikan kebajikan waris terpelihara.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pelan" class="py-24 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-brandRed font-black tracking-widest text-xs uppercase">Product Knowledge</span>
+            <h2 class="text-4xl md:text-5xl font-black text-brandDark mt-3 mb-16 uppercase italic">Pilihan Pelan <span class="text-brandTurquoise">PruBSN Takaful</span></h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-8 rounded-3xl bg-brandLightGrey border border-gray-100 group hover:bg-white hover:border-brandGold transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-brandGold/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brandGold group-hover:text-white transition-colors">
+                            <span class="font-black">01</span>
+                        </div>
+                        <h4 class="text-lg font-black mb-4 group-hover:text-brandGold uppercase leading-tight">PruBSN Warisan Gold</h4>
+                        <p class="text-brandGrey text-sm leading-relaxed mb-6">Fokus utama untuk <strong>Hibah & Income Protection</strong>. Melindungi aspek Kematian dan TPD (Lumpuh Kekal).</p>
+                    </div>
+                    <div class="text-[10px] font-bold text-brandGold uppercase tracking-widest">Hibah & Legacy</div>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-brandLightGrey border border-gray-100 group hover:bg-white hover:border-brandTurquoise transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-brandTurquoise/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brandTurquoise group-hover:text-white transition-colors">
+                            <span class="font-black">02</span>
+                        </div>
+                        <h4 class="text-lg font-black mb-4 group-hover:text-brandTurquoise uppercase leading-tight">PruBSN Anugerah Max</h4>
+                        <p class="text-brandGrey text-sm leading-relaxed mb-6 text-left">Pelan komprehensif merangkumi:<br>
+                            • Medical Card<br>
+                            • Sakit Kritikal<br>
+                            • Pampasan Kemalangan
+                        </p>
+                    </div>
+                    <div class="text-[10px] font-bold text-brandTurquoise uppercase tracking-widest">All-In-One Protection</div>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-brandLightGrey border border-gray-100 group hover:bg-white hover:border-brandRed transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-brandRed/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brandRed group-hover:text-white transition-colors">
+                            <span class="font-black">03</span>
+                        </div>
+                        <h4 class="text-lg font-black mb-4 group-hover:text-brandRed uppercase leading-tight">PruBSN Anggun</h4>
+                        <p class="text-brandGrey text-sm leading-relaxed mb-6">Pelan <strong>Khas Wanita</strong> yang melindungi kebajikan wanita termasuk kanser dan sakit kritikal khusus wanita.</p>
+                    </div>
+                    <div class="text-[10px] font-bold text-brandRed uppercase tracking-widest">Ladies Only</div>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-brandLightGrey border border-gray-100 group hover:bg-white hover:border-brandDark transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-brandDark/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brandDark group-hover:text-white transition-colors">
+                            <span class="font-black">04</span>
+                        </div>
+                        <h4 class="text-lg font-black mb-4 group-hover:text-brandDark uppercase leading-tight">PruBSN KritikalCare 360</h4>
+                        <p class="text-brandGrey text-sm leading-relaxed mb-6">Perlindungan <strong>Sakit Kritikal</strong> menyeluruh dari tahap awal sehingga tahap akhir (Late Stage).</p>
+                    </div>
+                    <div class="text-[10px] font-bold text-brandDark uppercase tracking-widest">360° Critical Illness</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profil" class="py-16 md:py-24 bg-white relative overflow-hidden">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row gap-12 md:gap-16 items-start">
+            
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-black mb-6 md:mb-8 italic uppercase text-brandDark leading-tight">
+                    Biography <br>
+                    <span class="text-brandRed">Naim Fital</span>
+                </h2>
+                
+                <div class="space-y-6 text-brandGrey leading-relaxed text-base md:text-lg">
+                    <p>
+                        Merupakan graduan undang-undang dari <strong class="text-brandDark">Universiti Kebangsaan Malaysia (UKM)</strong> dengan ijazah LLB (Hons) serta Diploma Lanjutan Kehakiman & Pentadbiran Islam (DAIJ).
+                    </p>
+                    <p>
+                        Sebagai seorang <strong class="text-brandDark">Advocate & Solicitor</strong>, Naim membawakan perspektif perundangan ke dalam industri Takaful bermula tahun 2019. Kini beliau memegang jawatan sebagai <strong class="text-brandDark">Unit Manager</strong> di bawah Muqmeen Group.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="bg-brandLightGrey p-5 rounded-2xl border border-gray-100">
+                            <p class="text-xs font-bold text-brandTurquoise uppercase mb-2 tracking-widest">Pendidikan</p>
+                            <p class="text-sm md:text-base font-black text-brandDark">Bachelor of Law, LLB (Hons) UKM</p>
+                        </div>
+                        <div class="bg-brandLightGrey p-5 rounded-2xl border border-gray-100">
+                            <p class="text-xs font-bold text-brandTurquoise uppercase mb-2 tracking-widest">Agensi</p>
+                            <p class="text-sm md:text-base font-black text-brandDark">Muqmeen Group</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="pencapaian" class="w-full md:w-1/2 bg-brandDark rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-14 text-white shadow-2xl relative">
+                <div class="absolute top-6 right-6 md:top-10 md:right-10">
+                    <span class="gold-gradient font-black text-2xl md:text-4xl tracking-tighter">MDRT</span>
+                </div>
+                
+                <h3 class="text-xl md:text-2xl font-black mb-8 md:mb-10 uppercase tracking-widest border-b border-white/10 pb-4 pr-16">
+                    Pencapaian <span class="hidden sm:inline">Tertinggi</span>
+                </h3>
+                
+                <ul class="space-y-5 md:space-y-6">
+                    <li class="flex justify-between items-center group border-b border-white/5 pb-3">
+                        <span class="text-gray-400 group-hover:text-white transition text-sm md:text-base">MDRT Members</span>
+                        <span class="bg-brandGold text-brandDark px-3 py-1 rounded-lg font-black italic text-xs md:text-sm whitespace-nowrap">5x Times</span>
+                    </li>
+                    <li class="flex justify-between items-center group border-b border-white/5 pb-3">
+                        <span class="text-gray-400 group-hover:text-white transition text-sm md:text-base">MDRT Ambassador</span>
+                        <span class="text-brandGold font-black text-sm md:text-base">2025/2026</span>
+                    </li>
+                    <li class="flex justify-between items-center group border-b border-white/5 pb-3">
+                        <span class="text-gray-400 group-hover:text-white transition text-sm md:text-base">Star Club Qualifiers</span>
+                        <span class="bg-white/10 px-3 py-1 rounded-lg font-black italic text-xs md:text-sm whitespace-nowrap">7x Times</span>
+                    </li>
+                    <li class="flex justify-between items-center group">
+                        <span class="text-gray-400 group-hover:text-white transition text-sm md:text-base text-left pr-2">Executive Wealth Planner</span>
+                        <span class="bg-white/10 px-3 py-1 rounded-lg font-black italic text-xs md:text-sm whitespace-nowrap">5x Times</span>
+                    </li>
+                </ul>
+                
+                <div class="mt-8 md:mt-12 p-5 bg-white/5 rounded-2xl border border-white/10">
+                    <p class="text-[11px] md:text-xs italic text-gray-400 leading-relaxed text-center md:text-left">
+                        "Pencapaian ini adalah cermin kepada komitmen saya dalam memberikan servis terbaik kepada 1,000+ pemegang polisi di seluruh Malaysia."
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section id="recruitment" class="py-24 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-brandRed font-black tracking-widest text-xs uppercase">Join Our Team</span>
+            <h2 class="text-4xl md:text-6xl font-black text-brandDark mt-3 mb-8 uppercase italic">
+                Peluang Pekerjaan & <br>
+                <span class="text-brandTurquoise italic">Jana Pendapatan</span>
+            </h2>
+            
+            <p class="text-brandGrey text-lg md:text-xl max-w-3xl mx-auto mb-16 leading-relaxed">
+                Bina kerjaya profesional dalam bidang Takaful dengan bimbingan terus daripada kami. Kami menyediakan platform yang stabil untuk anda berkembang dan mencapai impian kewangan anda.
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+                <div class="bg-brandLightGrey p-10 rounded-[2.5rem] border border-gray-100 shadow-sm">
+                    <div class="text-4xl mb-6 text-brandRed">💼</div>
+                    <h4 class="font-black text-brandDark mb-4 uppercase">Kerjaya Fleksibel</h4>
+                    <p class="text-sm text-brandGrey">Uruskan masa bekerja mengikut kesesuaian gaya hidup anda sendiri.</p>
+                </div>
+
+                <div class="bg-brandDark p-10 rounded-[2.5rem] shadow-2xl transform md:-translate-y-4">
+                    <div class="text-4xl mb-6 text-brandTurquoise">📈</div>
+                    <h4 class="font-black text-white mb-4 uppercase">Potensi Pendapatan</h4>
+                    <p class="text-sm text-gray-400">Peluang meningkatkan pendapatan secara progresif melalui usaha anda sendiri.</p>
+                </div>
+
+                <div class="bg-brandLightGrey p-10 rounded-[2.5rem] border border-gray-100 shadow-sm">
+                    <div class="text-4xl mb-6 text-brandGold">🎓</div>
+                    <h4 class="font-black text-brandDark mb-4 uppercase">Bimbingan Leader</h4>
+                    <p class="text-sm text-brandGrey">Sistem latihan yang tersusun untuk membantu anda bermula dari kosong.</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <a href="https://wa.me/60176335031?text=Saya%20berminat%20dengan%20peluang%20kerjaya%20Takaful" class="bg-brandRed text-white px-12 py-6 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-xl shadow-brandRed/20">
+                    HUBUNGI KAMI UNTUK INTERVIEW
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-brandLightGrey">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-16 italic uppercase text-brandDark">Soalan Lazim (FAQ)</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="bg-white p-6 rounded-2xl shadow-sm group border-l-4 border-transparent open:border-brandRed transition-all">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center group-open:text-brandRed transition">
+                        Kenapa perlu ejen yang ada latar belakang Undang-undang?
+                        <span class="text-2xl font-light group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-brandGrey leading-relaxed italic text-sm">Ini memastikan setiap terma polisi difahami dengan tepat, memudahkan proses tuntutan (claims) terutama kes yang melibatkan hujah fakta dan dokumen perundangan.</p>
+                </details>
+                <details class="bg-white p-6 rounded-2xl shadow-sm group border-l-4 border-transparent open:border-brandRed transition-all">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center group-open:text-brandRed transition">
+                        Adakah Encik Naim uruskan kemasukan hospital secara peribadi?
+                        <span class="text-2xl font-light group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-brandGrey leading-relaxed italic text-sm">Ya, koordinasi hospital admission adalah salah satu bidang kepakaran saya bagi memastikan klien mendapat rawatan tanpa gangguan birokrasi.</p>
+                </details>
+                <details class="bg-white p-6 rounded-2xl subtle-shadow group border-l-4 border-transparent open:border-brandRed transition-all">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center group-open:text-brandRed transition">
+                        Bolehkah saya gunakan kad ini di mana-mana hospital?
+                        <span class="text-2xl font-light group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-brandGrey leading-relaxed italic">Ya, ia diterima di rangkaian hospital panel PruBSN di seluruh Malaysia, termasuk hospital swasta terkemuka.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <div class="bg-brandRed p-12 md:p-20 rounded-[3rem] shadow-2xl shadow-brandRed/30 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                    <div class="absolute transform -rotate-45 text-white text-[10rem] font-black top-0 left-0">NAIM</div>
+                </div>
+                <h2 class="text-white text-4xl md:text-6xl font-black italic mb-8 uppercase leading-tight relative z-10">
+                    Dapatkan Konsultasi<br>Elite Hari Ini.
+                </h2>
+                <a href="https://wa.me/60176335031" class="inline-block bg-white text-brandRed px-12 py-6 rounded-2xl font-black text-2xl hover:scale-105 transition-all shadow-xl relative z-10">
+                    WHATSAPP NAIM FITAL
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brandDark py-12 border-t border-white/5 text-center">
+        <div class="container mx-auto px-6 text-gray-500">
+            <div class="flex justify-center gap-6 mb-6">
+                <img src="prubsn.jpeg" alt="PruBSN" class="h-8">
+                <img src="muqmeen.jpeg" alt="Muqmeen Group" class="h-8">
+            </div>
+            <p class="text-[10px] uppercase font-bold tracking-[0.3em] mb-4">Muhammad Naim bin Fital • Unit Manager</p>
+            <p class="text-xs mb-8 italic">Muqmeen Group | Prudential BSN Takaful Berhad</p>
+            <p class="text-[9px]">© 2026 Muhammad Naim. All Rights Reserved. Takaful & Legal Specialist.</p>
+        </div>
+    </footer>
+
+</body>
+<script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    const links = document.querySelectorAll('.mobile-link');
+    const icon = document.getElementById('menu-icon');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        // Tukar icon ke 'X' bila buka menu
+        if (menu.classList.contains('hidden')) {
+            icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        } else {
+            icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+        }
+    });
+
+    // Tutup menu bila link ditekan
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+            icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        });
+    });
+</script>
+</html>
                 extend: {
                     colors: {
                         brandRed: '#ED1B2E',       // Prudential Red
